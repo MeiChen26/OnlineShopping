@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.cn.neusoft.project.model.dao.GoodsMapper">
+    <select id="findNewGoods" resultType="Goods">
+    select * from goods order by goods_date desc
+    </select>
+
+    <select id="findSalesGoods" resultType="Goods">
+        select * from goods order by goods_sale desc
+    </select>
+
+    <select id="findAllGoodsByCateId" parameterType="String" resultType="Goods">
+        select * from goods
+            where cate_id = #{cateId}
+    </select>
+
+    <select id="findGoodsDetailById" parameterType="String" resultMap="GoodsResultMap">
+        select * from goods g left join pic p
+        on g.goods_id = p.goods_id
+        where g.goods_id = #{goods_id}
+    </select>
+    <select id="findGoodsSizesById" parameterType="Integer" resultMap="GoodsResultMap">
+        select g.goods_id, s.size_id, s.size_name
+        from goods g
+        left join size s on g.goods_id = s.goods_id
+        where g.goods_id=#{goods_id}
+    </select>
+    <resultMap id="GoodsResultMap" type="Goods">
+        <id property="goods_id" column="goods_id"/>
+        <result property="cate_id" column="cate_id"/>
+        <result property="goods_name" column="goods_name"/>
+        <result property="goods_desc" column="goods_desc"/>
+        <result property="goods_price" column="goods_price"/>
+        <result property="goods_discount" column="goods_discount"/>
+        <result property="goods_stock" column="goods_stock"/>
+        <result property="goods_origin" column="goods_origin"/>
+        <result property="goods_material" column="goods_material"/>
+        <result property="goods_postalfee" column="goods_postalfee"/>
+        <result property="goods_date" column="goods_date"/>
+        <result property="goods_sales" column="goods_sales"/>
+        <result property="goods_pic" column="goods_pic"/>
+        <collection property="pics" ofType="Pic">
+            <id property="pic_id" column="pic_id"/>
+            <result property="goods_id" column="goods_id"/>
+            <result property="pic_url" column="pic_url"/>
+        </collection>
+    </resultMap>
+
+
+
+</mapper>

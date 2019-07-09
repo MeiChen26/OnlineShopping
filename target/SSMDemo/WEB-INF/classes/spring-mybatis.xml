@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--配置连接池，连接数据库，连接XXmapper.xml-->
+    <bean class="org.apache.commons.dbcp2.BasicDataSource"
+           id="dataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/ssmdemo"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="Goodluck1234!"></property>
+    </bean>
+
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean"
+          id="sqlSessionFactory">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:mybatis.xml"></property>
+        <property name="mapperLocations" value="classpath:edu/cn/neusoft/project/model/dao/*.xml"></property>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
+          id="mapperScannerConfigurer">
+        <property name="basePackage" value="edu.cn.neusoft.project.model.dao"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+    </bean>
+</beans>
