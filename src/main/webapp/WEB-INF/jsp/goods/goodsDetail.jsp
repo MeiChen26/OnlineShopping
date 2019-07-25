@@ -15,13 +15,20 @@
             <%@include file="../userLeftNav.jsp" %>
         </div>
        <form class="form-inline" role="form" action="${pageContext.request.contextPath}/order/buyGoods.action" method="post">
-        <div class="col-md-6">
+           <input type="hidden"  name="goodsId"value="${goodsDetail.goods_id}"/>
+           <input type="hidden" name="goodsName" value="${goodsDetail.goods_name}"/>
+           <input type="hidden" name="goodsPrice" value="${goodsDetail.goods_price}"/>
+           <input type="hidden" name="goodsDiscount" value="${goodsDetail.goods_discount}"/>
+           <input type="hidden" name="goodsPostalfee" value="${goodsDetail.goods_postalfee}"/>
+           <div class="col-md-6">
             <div class="col-md-12">
                 <c:if test="${!empty goodsDetail }">
                 <c:forEach items="${goodsDetail.pics}" var="g" varStatus="vs">
                     <div class="col-xs-2 col-sm-2" >
                         <a href="#" class="thumbnail" >
                             <img  src="${pageContext.request.contextPath}${g.pic_url}" alt="暂无图片" id="${vs.first?'first_img':''}">
+
+                            <input type="hidden" name="pic" value="${g.pic_url}"/>
                         </a>
                     </div>
                 </c:forEach>
@@ -71,6 +78,7 @@
                           <div class="btn-group" role="group">
                               <c:forEach items="${goodsSizes.sizes}" var="s" varStatus="vs">
                                   <button type="button" class="btn btn-default ${vs.first?'btn-info':''}" >${s.size_name}</button>
+                                  <input type="hidden" name="size" id="size" value="${s.size_name}"/>
                               </c:forEach>
                           </div>
                       </p>
@@ -79,7 +87,8 @@
                           <label>颜色选择：</label>
                           <div class="btn-group">
                               <c:forEach items="${goodsColors.colors}" var="c" varStatus="vs">
-                                  <button type="button" class="btn btn-default btn-xs ${vs.first?'btn-infor':''}" >${c.color_name}</button>
+                                  <button type="button" class="btn btn-default btn-xs ${vs.first?'btn-info':''}" >${c.color_name}</button>
+                                  <input type="hidden" id="color" value="${c.color_name}"/>
                               </c:forEach>
                   </div>
                       </p>
@@ -87,7 +96,7 @@
                       <div class="form-group">
                           <lable for="num">数量：</lable>
                           <div class="input-group input-group-sm col-xs-3">
-                              <input class="form-control" id="num" type="number" value="1">
+                              <input class="form-control" id="num" name="num" type="number" value="1"/>
                           </div>
 
                   </div>

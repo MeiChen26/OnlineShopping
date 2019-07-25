@@ -28,9 +28,13 @@ public class GoodsAction {
 
     @RequestMapping("/getGoodsDetailById.action")
     public String getGoodsDetailById(@RequestParam String goodsId, Map<String, Goods>map){
-        Goods goodsDetail = goodsService.getGoodsDetailById(goodsId);
 
+        Goods goodsDetail = goodsService.getGoodsDetailById(goodsId);
+        Goods goodsSizes = goodsService.getGoodsSizeById(goodsId);
+        Goods goodsColors=goodsService.getGoodsColorById(goodsId);
         map.put("goodsDetail", goodsDetail);
+        map.put("goodsSizes", goodsSizes);
+        map.put("goodsColors", goodsColors);
         return "/goods/goodsDetail";
     }
 }

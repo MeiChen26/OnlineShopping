@@ -48,7 +48,7 @@
                 $("#loginFormModal").modal('hide');
                 if(result.login=="yes"){
                     var s="<li><a href=''>"+user_name+"您好，欢迎来到爱丽小铺！</a>"
-                        +"<li><a href='#' onclick=''>购物车<span class='badge'></span></a><li>"
+                        +"<li><a href='#' onclick=''>购物车<span class='badge'></span></a></li>"
                         +"<li><a href=''>我的订单</a></li>"
                         +"<li><a href=''>个人中心</a></li>"
                         +"<li><a href='#' onclick=''>退出登录</a></li>";

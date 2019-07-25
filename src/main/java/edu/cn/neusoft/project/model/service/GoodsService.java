@@ -9,4 +9,6 @@ public interface GoodsService {
     List<Goods> getSalesGoods();
     List<Goods> getGoodsByCate(String cateId);
     Goods getGoodsDetailById(String goodsId);
+    Goods getGoodsSizeById(String goodsId);
+    Goods getGoodsColorById(String goodsId);
 }

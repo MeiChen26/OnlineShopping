@@ -11,4 +11,6 @@ public interface GoodsMapper {
     List<Goods> findSalesGoods();
     List<Goods> findAllGoodsByCateId(String cateId);
     Goods findGoodsDetailById(String goodsId);
+    Goods findGoodsSizeById(String goodsId);
+    Goods findGoodsColorById(String goodsId);
 }

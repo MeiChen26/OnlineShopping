@@ -5,6 +5,8 @@
 <mapper namespace="edu.cn.neusoft.project.model.dao.UserMapper">
     <!--User checkUser(User user);-->
     <select id = "checkUser" parameterType="User" resultType ="User">
-      select * from user where user_name = #{user_name} and user_password = #{user_password}
+      select * from user where
+      user_name = #{user_name}
+      and user_password = #{user_password}
     </select>
 </mapper>

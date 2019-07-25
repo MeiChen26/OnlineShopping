@@ -11,5 +11,8 @@
         <typeAlias type="edu.cn.neusoft.project.model.vo.Category" alias = "Category"></typeAlias>
         <typeAlias type="edu.cn.neusoft.project.model.vo.Goods" alias = "Goods"></typeAlias>
         <typeAlias type="edu.cn.neusoft.project.model.vo.Pic" alias="Pic"></typeAlias>
+        <typeAlias type="edu.cn.neusoft.project.model.vo.Address" alias="Address"></typeAlias>
+        <typeAlias type="edu.cn.neusoft.project.model.vo.Size" alias="Size"></typeAlias>
+        <typeAlias type="edu.cn.neusoft.project.model.vo.Color" alias="Color"></typeAlias>
     </typeAliases>
 </configuration>

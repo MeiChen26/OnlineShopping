@@ -34,5 +34,16 @@ public class GoodsServiceImp implements GoodsService{
         return goodsDetail;
     }
 
+    @Override
+    public Goods getGoodsSizeById(String goodsId) {
+        Goods goodsSize = goodsMapper.findGoodsSizeById(goodsId);
+        return goodsSize;
+    }
+
+    @Override
+    public Goods getGoodsColorById(String goodsId) {
+        Goods goodsColor = goodsMapper.findGoodsColorById(goodsId);
+        return goodsColor;
+    }
 
 }

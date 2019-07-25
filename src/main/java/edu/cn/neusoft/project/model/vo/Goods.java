@@ -23,7 +23,62 @@ public class Goods {
     private Date goods_date;
     private String goods_pic;
     private int goods_sale;
+
     private List<Pic> pics;
+    private List<Size> sizes;
+    private List<Color> colors;
+
+    public List<Color> getColors() {
+        return colors;
+    }
+
+    public void setColors(List<Color> colors) {
+        this.colors = colors;
+    }
+
+    public List<Size> getSizes() {
+        return sizes;
+    }
+
+    public void setSizes(List<Size> sizes) {
+        this.sizes = sizes;
+    }
+
+    public Goods(int goods_id, int cate_id, String goods_name, String goods_desc, float goods_price, float goods_discount, int goods_stock, String goods_origin, String goods_material, int goods_postalfee, Date goods_date, String goods_pic, int goods_sale, List<Pic> pics, List<Size> sizes, List<Color> colors) {
+        this.goods_id = goods_id;
+        this.cate_id = cate_id;
+        this.goods_name = goods_name;
+        this.goods_desc = goods_desc;
+        this.goods_price = goods_price;
+        this.goods_discount = goods_discount;
+        this.goods_stock = goods_stock;
+        this.goods_origin = goods_origin;
+        this.goods_material = goods_material;
+        this.goods_postalfee = goods_postalfee;
+        this.goods_date = goods_date;
+        this.goods_pic = goods_pic;
+        this.goods_sale = goods_sale;
+        this.pics = pics;
+        this.sizes = sizes;
+        this.colors = colors;
+    }
+
+    public Goods(int goods_id, int cate_id, String goods_name, String goods_desc, float goods_price, float goods_discount, int goods_stock, String goods_origin, String goods_material, int goods_postalfee, Date goods_date, String goods_pic, int goods_sale, List<Size> sizes) {
+        this.goods_id = goods_id;
+        this.cate_id = cate_id;
+        this.goods_name = goods_name;
+        this.goods_desc = goods_desc;
+        this.goods_price = goods_price;
+        this.goods_discount = goods_discount;
+        this.goods_stock = goods_stock;
+        this.goods_origin = goods_origin;
+        this.goods_material = goods_material;
+        this.goods_postalfee = goods_postalfee;
+        this.goods_date = goods_date;
+        this.goods_pic = goods_pic;
+        this.goods_sale = goods_sale;
+        this.sizes = sizes;
+    }
 
     public Goods() {
 
@@ -134,22 +189,6 @@ public class Goods {
 
     public void setGoods_pic(String goods_pic) {
         this.goods_pic = goods_pic;
-    }
-
-    public Goods(int goods_id, int cate_id, String goods_name, String goods_desc, float goods_price, float goods_discount, int goods_stock, String goods_origin, String goods_material, int goods_postalfee, Date goods_date, String goods_pic, int goods_sale) {
-        this.goods_id = goods_id;
-        this.cate_id = cate_id;
-        this.goods_name = goods_name;
-        this.goods_desc = goods_desc;
-        this.goods_price = goods_price;
-        this.goods_discount = goods_discount;
-        this.goods_stock = goods_stock;
-        this.goods_origin = goods_origin;
-        this.goods_material = goods_material;
-        this.goods_postalfee = goods_postalfee;
-        this.goods_date = goods_date;
-        this.goods_pic = goods_pic;
-        this.goods_sale = goods_sale;
     }
 
 

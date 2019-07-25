@@ -54,34 +54,42 @@
         <div class="col-md-12">
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h3>新到商品<a class="btn" href="">查看更多 »</a></h3>
+                    <h3>新到商品<a class="btn" href="">查看更多</a></h3>
                 </div>
                 <div class="panel-body">
-                    <div id="newGoodsCarousel" class="carousel slide goods" data-ride="carousel">
+                    <div id="myCarousel" class="carousel slide">
                         <!-- 轮播（Carousel）指标 -->
                         <ol class="carousel-indicators">
-                            <li data-target="#newGoodsCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#newGoodsCarousel" data-slide-to="1"></li>
-                            <li data-target="#newGoodsCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
+                        <!-- 轮播（Carousel）项目 -->
                         <div class="carousel-inner">
-                            <c:forEach var="g" items="${newGoods}" varStatus="vs">
-                                <div class="item ${vs.first?'active':''} goods" >
-                                    <div class="thumbnail">
-                                        <a href="" >
-                                            <img src="${pageContext.request.contextPath}${g.goods_pic}" alt="Image"/></a>
-                                        <div align="center">
-                                                ${g.goods_name}
-                                            <br>现售<span class="badge"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span>${g.goods_discount}</span></div>
-                                    </div>
+                            <c:set var="index" value="0"/>
+                            <c:forEach begin="0" end="${fn:length(newGoods)/3-1}">
+                                <div clas="row">
+                                        <c:forEach begin="0" end="2">
+                                            <div class="col-md-4">
+                                                <a href="">
+                                                    <img src="${pageContext.request.contextPath}${newGoods[index].goods_pic}" alt="image"></a>
+                                                <div class="container">
+                                                    <div class="carousel-caption">${newGoods[index].goods_name}<br>共售出
+                                                        <span class="badge">${newGoods[index].goods_sale}件</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    <c:set var="index" value="${index+1}"/>
+                                    </c:forEach>
                                 </div>
                             </c:forEach>
                         </div>
-                        <a class="left carousel-control" href="#newGoodsCarousel" role="button" data-slide="prev">
+                        <!-- 轮播（Carousel）导航 -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="right carousel-control" href="#newGoodsCarousel" role="button" data-slide="next">
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -89,6 +97,21 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class ="col-md-12">
             <div class="panel panel-info">
