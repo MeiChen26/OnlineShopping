@@ -15,9 +15,9 @@ import java.util.Map;
 @Controller
 @RequestMapping("/goods")
 public class GoodsAction {
-
     @Resource
     private GoodsService goodsService;
+
 
     @RequestMapping("/getGoodsByCategory.action")
     public String getGoodsByCate(@RequestParam String cateId, Map<String, List<Goods>> map){
@@ -26,10 +26,12 @@ public class GoodsAction {
         return "/goods/goodsList";
     }
 
+
     @RequestMapping("/getGoodsDetailById.action")
     public String getGoodsDetailById(@RequestParam String goodsId, Map<String, Goods>map){
 
         Goods goodsDetail = goodsService.getGoodsDetailById(goodsId);
+        System.out.println(goodsDetail.getGoods_name());
         Goods goodsSizes = goodsService.getGoodsSizeById(goodsId);
         Goods goodsColors=goodsService.getGoodsColorById(goodsId);
         map.put("goodsDetail", goodsDetail);

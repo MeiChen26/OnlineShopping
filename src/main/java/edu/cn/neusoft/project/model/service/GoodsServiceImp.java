@@ -23,7 +23,8 @@ public class GoodsServiceImp implements GoodsService{
 
     @Override
     public List<Goods> getGoodsByCate(String cateId) {
-        List<Goods> goods = goodsMapper.findAllGoodsByCateId(cateId);
+        List<Goods> goods =
+                goodsMapper.findAllGoodsByCateId(cateId);
         return goods;
 
     }

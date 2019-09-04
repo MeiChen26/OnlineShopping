@@ -8,7 +8,16 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Insert title here</title>
+</head>
+<body>
 <%@include file="../userTopNav.jsp" %>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2">
@@ -17,6 +26,7 @@
        <form class="form-inline" role="form" action="${pageContext.request.contextPath}/order/buyGoods.action" method="post">
            <input type="hidden"  name="goodsId"value="${goodsDetail.goods_id}"/>
            <input type="hidden" name="goodsName" value="${goodsDetail.goods_name}"/>
+           console.log(${goodsDetail.goods_name})
            <input type="hidden" name="goodsPrice" value="${goodsDetail.goods_price}"/>
            <input type="hidden" name="goodsDiscount" value="${goodsDetail.goods_discount}"/>
            <input type="hidden" name="goodsPostalfee" value="${goodsDetail.goods_postalfee}"/>
@@ -88,7 +98,7 @@
                           <div class="btn-group">
                               <c:forEach items="${goodsColors.colors}" var="c" varStatus="vs">
                                   <button type="button" class="btn btn-default btn-xs ${vs.first?'btn-info':''}" >${c.color_name}</button>
-                                  <input type="hidden" id="color" value="${c.color_name}"/>
+                                  <input type="hidden" name="color" id="color" value="${c.color_name}"/>
                               </c:forEach>
                   </div>
                       </p>
@@ -122,3 +132,5 @@
       </div>
 
     </div>
+</body>
+</html>

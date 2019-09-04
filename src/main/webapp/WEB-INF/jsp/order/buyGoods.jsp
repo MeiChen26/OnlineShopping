@@ -12,13 +12,14 @@
 
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Title</title>
 </head>
 <body>
 
 <div class="container-fluid">
     <div class="row">
-        <form action="${pageContext.request.contextPath}/order/addOrder" method="post">
+        <form role="form" action="${pageContext.request.contextPath}/order/addOrder.action" method="post">
             <div class="col-md-12">
                 <c:if test="${!empty address}">
                     <h3>确认收货地址</h3>
@@ -102,9 +103,10 @@
                 </table>
 
                 <div class="col-md-12 text-right">
+                    <input type="hidden" name="orderPostalfee" value="${postalfee}"/>
                     <button id="submitOrder" class="btn btn-primary" type="submit">提交订单</button></div>
             </div>
-            <input type="hidden" name="orderPostalfee" value="${postalfee}"/>
+
         </form>
     </div>
 

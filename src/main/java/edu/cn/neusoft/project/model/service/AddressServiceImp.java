@@ -16,9 +16,7 @@ public class AddressServiceImp implements AddressService{
     @Override
     public List<Address> getAddressByUserId(int loginUserId) {
         List<Address> addrs=addressMapper.findAddrByUserId(loginUserId);
-        for(Address a:addrs){
-            System.out.println(a.getAddr_area());
-        }
+
         return addrs;
     }
 }

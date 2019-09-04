@@ -14,5 +14,6 @@
         <typeAlias type="edu.cn.neusoft.project.model.vo.Address" alias="Address"></typeAlias>
         <typeAlias type="edu.cn.neusoft.project.model.vo.Size" alias="Size"></typeAlias>
         <typeAlias type="edu.cn.neusoft.project.model.vo.Color" alias="Color"></typeAlias>
+        <typeAlias type="edu.cn.neusoft.project.model.vo.Order" alias="Order"></typeAlias>
     </typeAliases>
 </configuration>

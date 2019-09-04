@@ -98,7 +98,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="">网站首页</a>
+                        <a href="${pageContext.request.contextPath}/">网站首页</a>
                     </li>
                     <li>
                         <a href="">新到商品</a>

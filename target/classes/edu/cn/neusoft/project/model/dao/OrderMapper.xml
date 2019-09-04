@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.cn.neusoft.project.model.dao.OrderMapper">
+    <insert id="saveOrder" parameterType="Order" >
+        <!-- mysql插入数据后，获取id，将新插入记录的id值 放入User对象id属性中-->
+        <selectKey keyProperty="orderId" resultType="int" order="AFTER" >
+            select last_insert_id()  as orderId
+        </selectKey>
+        insert into order values(null,#{order_code},#{user_id},
+        0,#{order_address},#{order_postalfee},curdate())
+    </insert>
+
+    <insert id="saveOrderDetail" >
+		insert into orderdetail values(null,#{order_id},#{goods_id}, #{detail_name},#{detail_size},#{detail_color},#{detail_price},
+		#{detail_num},#{detail_pic})
+	</insert>
+</mapper>

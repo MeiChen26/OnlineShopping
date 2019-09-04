@@ -39,12 +39,11 @@
     <select id="findSalesGoods" resultType="Goods">
         select * from goods order by goods_sale desc
     </select>
-
-    <select id="findAllGoodsByCateId" parameterType="String" resultType="Goods">
+    <select id="findAllGoodsByCateId" parameterType="String"
+            resultType="Goods">
         select * from goods
             where cate_id = #{cateId}
     </select>
-
     <select id="findGoodsDetailById" parameterType="String" resultMap="GoodsResultMap">
         select * from goods g left join pic p
         on g.goods_id = p.goods_id
