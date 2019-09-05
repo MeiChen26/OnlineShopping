@@ -34,7 +34,10 @@ public class OrderServiceImp implements OrderService {
         System.out.println("oderaddress"+order.getOrder_address());
         System.out.println("postfee"+order.getOrder_postalfee());
         order.setOrder_code(orderCode);
-
+        System.out.println(order.getOrder_code());
+        System.out.println(order.getUser_id());
+        System.out.println(order.getOrder_address());
+        System.out.println(order.getOrder_postalfee());
         orderMapper.saveOrder(order);
 
         int orderId=order.getOrder_id();
@@ -42,7 +45,7 @@ public class OrderServiceImp implements OrderService {
 
         for(int j=0;j<orderDetails.size();j++){
             OrderDetail od=orderDetails.get(j);
-
+            od.setOrder_id(orderId);
             orderMapper.saveOrderDetail(od);
         }
 

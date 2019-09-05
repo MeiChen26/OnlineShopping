@@ -30,7 +30,7 @@
                                 <td>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="address" value="${a.addr_province} ${a.addr_city} ${a.addr_area} ${a.addr_content} (${a.addr_receiver}收) ${a.addr_tel}" ${a.addr_isdefault==1?'checked':'' }>
+                                            <input type="hidden" name="address" value="${a.addr_province}${a.addr_city}${a.addr_area}${a.addr_content}"/>
 
                                         </label>
                                     </div>

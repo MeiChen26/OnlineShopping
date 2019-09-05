@@ -7,35 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d5e87ad-c8b1-4362-b066-f4c1b0a45547" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/GoodsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/GoodsAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/OrderAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/OrderAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/dao/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/dao/GoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/AddressServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/AddressServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/GoodsServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/GoodsServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/OrderServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/OrderServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/OrderMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/goodsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/goodsDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/buyGoods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/buyGoods.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userTopNav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userTopNav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/controller/GoodsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/controller/GoodsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/controller/OrderAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/controller/OrderAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/model/dao/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/model/dao/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/model/service/AddressServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/model/service/AddressServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/model/service/GoodsServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/edu/cn/neusoft/project/model/service/GoodsServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/classes/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/jsp/goods/goodsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/jsp/goods/goodsDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/jsp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/jsp/order/buyGoods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMDemo/WEB-INF/jsp/order/buyGoods.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/controller/GoodsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/controller/GoodsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/controller/OrderAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/controller/OrderAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/model/dao/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/model/dao/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/model/service/AddressServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/model/service/AddressServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/model/service/GoodsServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/cn/neusoft/project/model/service/GoodsServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,40 +62,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/GoodsAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/GoodsMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userTopNav.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/CategoryAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state relative-caret-position="448">
+              <caret line="143" selection-start-line="143" selection-end-line="143" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -125,11 +73,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/OrderAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+            <state relative-caret-position="533">
+              <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/confirmModal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/buyGoods.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="27" column="81" lean-forward="true" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -137,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/OrderServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+            <state relative-caret-position="40">
+              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,11 +112,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/OrderMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="185">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="88" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -158,8 +142,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="-34">
               <caret line="40" column="129" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/OrderDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -183,7 +176,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/CategoryAction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/buyGoods.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/loginFormModal.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/cateMapper.xml" />
@@ -205,16 +197,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.xml.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/orderDetail.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/dao/OrderMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/confirmModal.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/execute_result.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/AddressServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/OrderAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/buyGoods.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/goodsDetail.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/dao/GoodsMapper.java" />
@@ -224,7 +211,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/goodsList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userTopNav.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/buyGoods.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/OrderServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/OrderAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.jsp" />
       </list>
     </option>
   </component>
@@ -235,7 +228,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
@@ -546,17 +539,18 @@
       <workItem from="1567075301868" duration="426000" />
       <workItem from="1567476414567" duration="7541000" />
       <workItem from="1567573989213" duration="785000" />
-      <workItem from="1567575152408" duration="6278000" />
+      <workItem from="1567575152408" duration="16097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135433000" />
+    <option name="totallyTimeSpent" value="145252000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.45207438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.45207438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -566,7 +560,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.55950755" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04103967" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -592,7 +586,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.45207438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.45207438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -602,7 +596,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.55950755" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04103967" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -840,21 +834,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.xml.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/confirmModal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/dao/OrderMapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="51" lean-forward="true" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/execute_result.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -872,13 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/OrderDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/UserAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -893,13 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="18" column="11" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -949,73 +915,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/buyGoods.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/GoodsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/GoodsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="40" column="129" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userTopNav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -1036,34 +939,125 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/CategoryAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/OrderAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/GoodsAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+        <state relative-caret-position="366">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/OrderServiceImp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/GoodsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="88" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/vo/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/edu/cn/neusoft/project/model/dao/OrderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="185">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/model/service/OrderServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/buyGoods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="81" lean-forward="true" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/cn/neusoft/project/controller/OrderAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="137" column="36" selection-start-line="137" selection-start-column="36" selection-end-line="137" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/confirmModal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="40" column="129" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userTopNav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="143" selection-start-line="143" selection-end-line="143" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order/addOrder.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -15,6 +15,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -44,7 +45,9 @@ public class OrderAction {
         System.out.println("name:"+goodsName[0]);
 
         List<Address> addrs=addressService.getAddressByUserId(getUser().getUser_id());
-
+        for(Address a: addrs){
+            System.out.println(a.getAddr_area());
+        }
         map.put("address",addrs);
         map.put("goodsId", goodsId);
         map.put("goodsPrice", goodsPrice);
@@ -71,7 +74,8 @@ public class OrderAction {
 
     @RequestMapping("/addOrder.action")
     public String addOrder(@RequestParam String address, @RequestParam String orderPostalfee, HttpSession session,
-                           Map<String,String> m){
+                           Map<String,String> m) throws UnsupportedEncodingException {
+        address = new String(address.getBytes("iso-8859-1"), "utf-8");
 		System.out.println("address"+address);
 		for(int i=0;i<((String[])session.getAttribute("goodsId")).length;i++){
 			System.out.println("session"+((String[])session.getAttribute("goodsId"))[i]);
@@ -123,7 +127,17 @@ public class OrderAction {
         }
     }
 
+    @RequestMapping("/pay")
+    public String pay(@RequestParam String orderId,Map<String,String> m){
+        try{
 
+            return "/order/pay";
+        }
+        catch(Exception e){
+            e.printStackTrace();
+            return "/execute_result";
+        }
+    }
 //    @RequestMapping("/payForOrder")
 //    public String payForOrder(@RequestParam String orderId,Map<String,String> m){
 //        try{
