@@ -14,4 +14,35 @@
     <insert id="saveOrderDetail" parameterType="OrderDetail">
 		insert into orderdetail values(null,#{order_id},#{goods_id},#{detail_name},#{detail_size},#{detail_color},#{detail_price},#{detail_num},#{detail_pic})
 	</insert>
+
+    <select id="findMyOrders"  resultMap="OrderResultMap">
+        select *
+        from t_order o join orderdetail od
+        on o.order_id=od.order_id
+        where user_id=#{loginUserId}
+
+    </select>
+    <resultMap id="OrderResultMap" type="Order">
+        <id property="order_id" column="order_id"/>
+        <result property="order_code" column="order_code"/>
+        <result property="user_id" column="user_id"/>
+        <result property="order_status" column="order_status"/>
+        <result property="order_address" column="order_address"/>
+        <result property="order_postalfee" column="order_postalfee"/>
+        <result property="order_date" column="order_date"/>
+        <result property="user_name" column="user_name"/>
+
+        <!-- Order与OrderDetail一对多关系 -->
+        <collection property="details" ofType="OrderDetail">
+            <id property="detail_id" column="detail_id"/>
+            <result property="goods_id" column="goods_id"/>
+            <result property="detail_name" column="detail_name"/>
+            <result property="detail_size" column="detail_size"/>
+            <result property="detail_color" column="detail_color"/>
+            <result property="detail_price" column="detail_price"/>
+            <result property="detail_num" column="detail_num"/>
+            <result property="detail_pic" column="detail_pic"/>
+        </collection>
+
+    </resultMap>
 </mapper>

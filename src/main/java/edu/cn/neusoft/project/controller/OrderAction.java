@@ -127,29 +127,25 @@ public class OrderAction {
         }
     }
 
-    @RequestMapping("/pay")
-    public String pay(@RequestParam String orderId,Map<String,String> m){
-        try{
 
-            return "/order/pay";
+    @RequestMapping("/payForOrder.action")
+    public String payForOrder(@RequestParam String orderId, Map<String,List<Order>> m){
+        try{
+            //orderService.changeOrderStatus(orderId, ORDER_PAID);
+
+            List<Order> orders = orderService.getMyOrders(getUser().getUser_id());
+            m.put("orders", orders);
+            for(Order o: orders){
+                System.out.println("已付款"+o.getOrder_postalfee());
+            }
+            return "/order/orderList";
+
         }
         catch(Exception e){
             e.printStackTrace();
             return "/execute_result";
         }
     }
-//    @RequestMapping("/payForOrder")
-//    public String payForOrder(@RequestParam String orderId,Map<String,String> m){
-//        try{
-//            orderService.changeOrderStatus(orderId, ORDER_PAID);
-//            m.put("orderId",orderId);
-//            return "forward:/order/getMyOrders";
-//        }
-//        catch(Exception e){
-//            e.printStackTrace();
-//            return "/common/execute_result";
-//        }
-//    }
 //
 //    @RequestMapping("/getMyOrders")
 //    public String getMyOrders(@RequestParam(required=false) String status,Map<String,Page<Order>> m){

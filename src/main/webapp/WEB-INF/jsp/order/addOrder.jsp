@@ -26,9 +26,22 @@ $("#confirmNo").html("付款遇到问题，未完成支付");
 $("#confirmModal").modal();
 
 $("#confirmOk").click(function(){
-location.href=getContextPath()+"/order/payForOrder?orderId="+orderId;
+    console.log(1111111)
+    console.log(document.location.href)
+location.href=getContextPath()+"/order/payForOrder.action?orderId="+orderId;
+
 }
 );
+}
+
+function getContextPath(){
+    var  webroot=document.location.href;
+    webroot=webroot.substring(webroot.indexOf('//')+2,webroot.length);
+    webroot=webroot.substring(webroot.indexOf('/')+1,webroot.length);
+    webroot=webroot.substring(0,webroot.indexOf('/'));
+    var contextPath="/"+webroot;
+    return contextPath;
+    //alert(contextPath);
 }
 </script>
 <div class="container-fluid">

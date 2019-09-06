@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 @Service
 public class OrderServiceImp implements OrderService {
@@ -50,5 +48,16 @@ public class OrderServiceImp implements OrderService {
         }
 
         return orderId;
+    }
+
+    @Override
+    public List<Order> getMyOrders(int loginUserId) {
+
+        Map<String,Object> m=new HashMap<String,Object>();
+        m.put("userId", loginUserId+"");
+        List<Order> orderList=orderMapper.findMyOrders(loginUserId);
+        System.out.println(orderList);
+
+        return orderList;
     }
 }
