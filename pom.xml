@@ -23,7 +23,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <!--spring-web、spring-webmvc、mybatis、spring-jdbc、mysql-connector-java、mybatis-spring、commons-dbcp2、jstl、jackson-core、jackon-annotations、Jackson-databind-->
